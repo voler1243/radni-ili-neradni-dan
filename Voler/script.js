@@ -52,3 +52,48 @@ if (tekst === "ponedjeljak") {
 } else if (tekst === "nedjelja") {
     danBroj = 7;
 }
+
+if (danBroj !== 0) {
+    console.log("Uneseni dan ima broj: " + danBroj);
+} else if (uneseniBroj >= 1 && uneseniBroj <= 17 && uneseniBroj % 1 === 0) {
+    danBroj = uneseniBroj % 7;
+    if (danBroj === 0) {
+        danBroj = 7;
+    }
+
+    if (danBroj === 1) {
+        danNaziv = "ponedjeljak";
+    } else if (danBroj === 2) {
+        danNaziv = "utorak";
+    } else if (danBroj === 3) {
+        danNaziv = "srijeda";
+    } else if (danBroj === 4) {
+        danNaziv = "četvrtak";
+    } else if (danBroj === 5) {
+        danNaziv = "petak";
+    } else if (danBroj === 6) {
+        danNaziv = "subota";
+    } else {
+        danNaziv = "nedjelja";
+    }
+
+    console.log("Uneseni dan je " + danNaziv);
+}
+
+if (danBroj === 0) {
+    console.log("Pogreška: unesite cijeli broj od 1 do 17 ili naziv dana.");
+} else {
+    if (danBroj === 6 || danBroj === 7) {
+        console.log("Neradni dan");
+    } else {
+        console.log("Radni dan");
+    }
+
+    if (danBroj === 1) {
+        console.log("Ja najviše volim JS od svih programskih jezika");
+    } else if (danBroj === 4) {
+        console.log("Mali petak!");
+    } else if (danBroj === 5) {
+        console.log("Vikend na Vidiku!");
+    }
+}
