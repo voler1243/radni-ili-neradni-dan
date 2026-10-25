@@ -30,3 +30,25 @@ if (broj === 1) {
 } else if (broj === 5) {
     console.log("Vikend na Vidiku!");
 }
+
+var unos = prompt("Unesite broj (1-17) ili naziv dana:");
+var tekst = unos.toLowerCase();
+var uneseniBroj = Number(unos);
+var danBroj = 0;
+var danNaziv = "";
+
+if (tekst === "ponedjeljak") {
+    danBroj = 1;
+} else if (tekst === "utorak") {
+    danBroj = 2;
+} else if (tekst === "srijeda") {
+    danBroj = 3;
+} else if (tekst === "četvrtak") {
+    danBroj = 4;
+} else if (tekst === "petak") {
+    danBroj = 5;
+} else if (tekst === "subota") {
+    danBroj = 6;
+} else if (tekst === "nedjelja") {
+    danBroj = 7;
+}
