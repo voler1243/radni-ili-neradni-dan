@@ -16,3 +16,17 @@ if (broj === 0) {
 } else {
     console.log("Danas je subota");
 }
+
+if (broj === 0 || broj === 6) {
+    console.log("Neradni dan");
+} else {
+    console.log("Radni dan");
+}
+
+if (broj === 1) {
+    console.log("Ja najviše volim JS od svih programskih jezika");
+} else if (broj === 4) {
+    console.log("Mali petak!");
+} else if (broj === 5) {
+    console.log("Vikend na Vidiku!");
+}
